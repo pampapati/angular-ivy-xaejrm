@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+
+<my-apps></my-apps>
+<p>Start editing to see some magic happen :) {{ text }}</p>
+<!-- <div><input type="text" [(ngModel)]="user" /></div>
+{{ user }} -->
+
+<div>
+  <table>
+    <tr>
+      <th>Sl No</th>
+      <th *ngFor="let column of columns">{{ column }}</th>
+    </tr>
+    <tr *ngFor="let person of data | ownPipe: 25; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ person.name }}</td>
+      <td>{{ person.age }}</td>
+    </tr>
+  </table>
+</div>
